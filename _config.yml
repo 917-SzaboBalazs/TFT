@@ -1,14 +1,9 @@
-# Site settings
-title: Teamfight Tactics
-description: >-
-  Teamfight Tactics (TFT) is an auto battler game developed and published by Riot Games.
 baseurl: "/TFT"
-
-# Developer settings
-fullname: Szabó Balázs
-github_username:  BarryHary
-email: szabo.balazs2017@gmai.com
 
 # Build settings
 plugins:
   - jekyll-feed
+
+sass:
+  sass_dir: assets/css
+  style: compressed

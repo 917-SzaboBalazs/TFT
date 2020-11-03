@@ -1,0 +1,162 @@
+.fullheight
+  height: 100vh
+
+header
+  background: url("../img/header_bg.jpg") center center / cover
+  padding-top: 10px
+
+  nav
+    ul
+      list-style-type: none
+      display: flex
+      justify-content: flex-end
+
+      li
+        display: inline-block
+        font-size: 18px
+        margin-right: 40px
+
+#about
+  background: url("../img/about_bg.jpg") center center / cover fixed
+  padding-top: 10px
+  +position(relative, null null null null)
+
+  &::before
+    content: ""
+    +position(absolute, 0px 0px 0px 0px)
+    background: black
+    opacity: 0.9
+
+  .container
+    +position(absolute, 50% null null 50%)
+    transform: translate(-50%, -50%)
+
+    h1
+      margin: 0
+      line-height: 1
+      font-size: 72px
+      text-transform: uppercase
+      text-align: center
+
+
+    button
+      display: block
+      background-color: transparent
+      border: 5px solid white
+      outline: none
+      margin: 100px auto
+      font-size: 40px
+      font-family: monospace
+      padding: 10px 20px
+      color: white
+      transition: background-color 0.3s, color 0.3s, border-color 0.2s ease-in-out 0.1s
+      background-clip: padding-box
+
+      &:hover
+        border-color: transparent
+        background-color: white
+        color: black
+
+#champions
+  background: url("../img/tft_map.jpeg") center center / cover
+  +position(relative, null null null null)
+
+  &::before
+    content: ""
+    +position(absolute, 0px 0px 0px 0px)
+    background-color: #129a96
+    opacity: 0.85
+
+  .container
+    width: 100%
+    height: 100%
+    +position(absolute, 50% null null 50%)
+    transform: translate(-50%, -50%)
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    .content-container
+      h2
+        color: #054519
+        font-weight: bold
+        margin-right: 50px
+        font-size: 64px
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+
+      iframe
+        display: block
+        margin: 0 auto
+
+      button
+        display: block
+        background-color: transparent
+        border: 5px solid transparent
+        outline: none
+        margin: 75px auto
+        font-size: 40px
+        font-family: monospace
+        padding: 10px 20px
+        transition: all 0.2s
+        font-weight: 100
+
+        &:hover
+          border-color: black
+          letter-spacing: 2px
+
+    img
+      align-self: flex-end
+      width: 40%
+
+#class_origins
+  background: url("../img/about_bg.jpg") center center / cover fixed
+  padding-top: 10px
+  +position(relative, null null null null)
+  z-index: 0
+
+  &::before
+    content: ""
+    +position(absolute, 0px 0px 0px 0px)
+    background: black
+    opacity: 0.9
+    z-index: -1
+
+  .container
+    h1
+      text-align: center
+      font-size: 48px
+      letter-spacing: 2px
+
+    .synergies
+      display: flex
+      justify-content: space-between
+      margin: 0 150px
+
+      .box
+        width: 25%
+        background-color: rgba(#000000, 0.6)
+
+        h3
+          color: white
+          text-align: center
+
+        .text-container
+          height: 100%
+          display: flex
+          flex-wrap: wrap
+          align-items: space-between
+          align-content: space-between
+
+          p
+            color: white
+            font-size: 20px
+            padding: 0 30px
+            text-align: justify
+            line-height: 1.5
+            font-weight: 300
+
+          img
+            width: 100%
+            height: auto

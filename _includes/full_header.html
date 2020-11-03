@@ -1,0 +1,71 @@
+<header class="fullheight" >
+  <nav>
+    <ul>
+      {% for item in site.data.menu %}
+      <li><a href="#{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+
+<!-- About -->
+<section class="fullheight" id="{{ site.data.menu[0].url }}">
+  <div class="container">
+    <h1>This game is so fun</h1>
+    <button>Discover it</button>
+  </div>
+</section>
+
+<!-- Champions -->
+<section class="fullheight" id="{{ site.data.menu[1].url }}">
+  <div class="container">
+    <div class="content-container">
+      <h2>Get to know the heroes</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/u5CO1x_5Amg?start=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button>Discover it</button>
+    </div>
+    <img src="assets/img/lee_sin.png" alt="lee sin">
+  </div>
+</section>
+
+<!-- Synergies -->
+<section class="fullheight" id="{{ site.data.menu[2].url }}">
+  <div class="container">
+    <h1>We also have synergies...</h1>
+    <div class="synergies">
+      <div class="box">
+        <h3>Cultis</h3>
+        <hr>
+        <div class="text-container">
+          <p>Once your team loses 50% of their health, Galio is summoned, slamming into the largest cluster of enemies and knocking them up.<br><br>
+          3 - Tyrant Galio<br>
+          6 - Demon Lord Galio<br>
+          9 - Supreme Overlord Galio</p>
+          <img src="assets/img/gallio.jpg" alt="gallio">
+        </div>
+      </div>
+      <div class="box">
+        <h3>Fortune</h3>
+        <hr>
+        <div class="text-container">
+          <p>3 - Winning combat against a player will give bonus orbs. The longer you've gone without an orb, the bigger the payout!<br><br>
+            6 - Wins give an extra bonus orb with rare loot!</p>
+          <img src="assets/img/fortune.jpg" alt="fortune">
+        </div>
+      </div>
+      <div class="box">
+        <h3>Adept</h3>
+        <hr>
+        <div class="text-container">
+          <p>Adepts calm the flow of battle, reducing the Attack Speed of all enemies by 50% for a few seconds at the start of combat.<br><br>
+          2 - 2 Seconds<br>
+          3 - 3.5 Seconds<br>
+          4 - 6 Seconds</p>
+          <img src="assets/img/adept.jpg" alt="adept">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fullheight" id="{{ site.data.menu[3].url }}"></section>

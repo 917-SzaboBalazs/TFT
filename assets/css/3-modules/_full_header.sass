@@ -1,11 +1,4 @@
-.fullheight
-  height: 1000px
-
-.positioner
-  max-width: 1920px
-  margin: 0 auto
-
-header
+header#fullheader
   background: url("../img/header_bg.jpg") center center / cover
   padding-top: 10px
 
@@ -35,12 +28,13 @@ header
     +position(absolute, 50% null null 50%)
     transform: translate(-50%, -50%)
 
-    h1
+    h2
       margin: 0
-      line-height: 1
-      font-size: 72px
+      line-height: 1.3
+      font-size: 56px
       text-transform: uppercase
       text-align: center
+      letter-spacing: 2px
 
     button
       display: block
@@ -81,7 +75,7 @@ header
 
     .content-container
       h2
-        color: #054519
+        color: #09205c
         font-weight: bold
         margin-right: 50px
         font-size: 64px
@@ -94,18 +88,20 @@ header
 
       button
         display: block
-        background-color: transparent
+        background-color: rgba(#000000, 0.1)
         border: 5px solid transparent
+        border-radius: 10px
+        box-shadow: 0 0 10px black
         outline: none
         margin: 0 auto
         font-size: 40px
         font-family: monospace
+        color: #062b12
         padding: 10px 20px
         transition: all 0.2s
         font-weight: 100
 
         &:hover
-          border-color: black
           letter-spacing: 2px
 
     img

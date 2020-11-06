@@ -2,6 +2,44 @@
 layout: pages
 ---
 
-<section id="class-origins-section">
-  <div class="container"></div>
+<section id="class-origins-section" class="positioner">
+  <div class="container">
+    <h2>Classes & Origins</h2>
+    <div class="synergy-icons">
+      <img src="assets/img/synergies/adept.png" alt="adept" id="adept">
+      <img src="assets/img/synergies/assassin.png" alt="assassin" id="assassin">
+      <img src="assets/img/synergies/brawler.png" alt="brawler" id="brawler">
+      <img src="assets/img/synergies/cultist.png" alt="cultist" id="cultist">
+      <img src="assets/img/synergies/dazzler.png" alt="dazzler" id="dazzler">
+      <img src="assets/img/synergies/divine.png" alt="divine" id="divine">
+      <img src="assets/img/synergies/duelist.png" alt="duelist" id="duelist">
+      <img src="assets/img/synergies/dusk.png" alt="dusk" id="dusk">
+      <img src="assets/img/synergies/elderwood.png" alt="elderwood" id="elderwood">
+      <img src="assets/img/synergies/emperor.png" alt="emperor" id="emperor">
+      <img src="assets/img/synergies/enlightened.png" alt="enlightened" id="enlightened">
+      <img src="assets/img/synergies/exile.png" alt="exile" id="exile">
+      <img src="assets/img/synergies/fortune.png" alt="fortune" id="fortune">
+      <img src="assets/img/synergies/hunter.png" alt="hunter" id="hunter">
+      <img src="assets/img/synergies/keeper.png" alt="keeper" id="keeper">
+      <img src="assets/img/synergies/mage.png" alt="mage" id="mage">
+      <img src="assets/img/synergies/moonlight.png" alt="moonlight" id="moonlight">
+      <img src="assets/img/synergies/mystic.png" alt="mystic" id="mystic">
+      <img src="assets/img/synergies/ninja.png" alt="ninja" id="ninja">
+      <img src="assets/img/synergies/shade.png" alt="shade" id="shade">
+      <img src="assets/img/synergies/sharpshooter.png" alt="sharpshooter" id="sharpshooter">
+      <img src="assets/img/synergies/spirit.png" alt="spirit" id="spirit">
+      <img src="assets/img/synergies/theboss.png" alt="theboss" id="theboss">
+      <img src="assets/img/synergies/tormented.png" alt="tormented" id="tormented">
+      <img src="assets/img/synergies/vanguard.png" alt="vanguard" id="vanguard">
+      <img src="assets/img/synergies/warlord.png" alt="warlord" id="warlord">
+    </div>
+    <div class="synergy-container">
+      {% for item in site.data.synergies %}
+      <div class="{{ item.name | split:' ' }} synergy">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
